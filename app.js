@@ -81,7 +81,7 @@ var carta7 = {
 
 var carta8 = {
     nome: "Ninetales",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
     atributos: {
         ataque: 9,
         defesa: 4,
@@ -92,7 +92,7 @@ var carta8 = {
 
 var carta9 = {
     nome: "Arcanine",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
     atributos: {
         ataque: 8,
         defesa: 6,
@@ -103,7 +103,7 @@ var carta9 = {
 
 var carta10 = {
     nome: "Cloyster",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/091.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png",
     atributos: {
         ataque: 6,
         defesa: 8,
@@ -114,7 +114,7 @@ var carta10 = {
 
 var carta11 = {
     nome: "Gengar",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/094.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
     atributos: {
         ataque: 8,
         defesa: 3,
@@ -125,7 +125,7 @@ var carta11 = {
 
 var carta12 = {
     nome: "Gyarados",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/130.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -136,7 +136,7 @@ var carta12 = {
 
 var carta13 = {
     nome: "Eevee",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/133.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
     atributos: {
         ataque: 6,
         defesa: 7,
@@ -147,7 +147,7 @@ var carta13 = {
 
 var carta14 = {
     nome: "Articuno",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/144.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
     atributos: {
         ataque: 9,
         defesa: 4,
@@ -158,7 +158,7 @@ var carta14 = {
 
 var carta15 = {
     nome: "Moltres",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/146.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
     atributos: {
         ataque: 7,
         defesa: 8,
@@ -169,7 +169,7 @@ var carta15 = {
 
 var carta16 = {
     nome: "Zapdos",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/145.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
     atributos: {
         ataque: 10,
         defesa: 4,
@@ -180,7 +180,7 @@ var carta16 = {
 
 var carta17 = {
     nome: "Dragonite",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
     atributos: {
         ataque: 8,
         defesa: 7,
@@ -191,7 +191,7 @@ var carta17 = {
 
 var carta18 = {
     nome: "Mewtwo",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
     atributos: {
         ataque: 9,
         defesa: 6,
@@ -202,7 +202,7 @@ var carta18 = {
 
 var carta19 = {
     nome: "Mew",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
     atributos: {
         ataque: 8,
         defesa: 7,
@@ -213,7 +213,7 @@ var carta19 = {
 
 var carta20 = {
     nome: "Chikorita",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/152.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
     atributos: {
         ataque: 7,
         defesa: 8,
@@ -224,7 +224,7 @@ var carta20 = {
 
 var carta21 = {
     nome: "Meganium",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/154.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png",
     atributos: {
         ataque: 9,
         defesa: 4,
@@ -235,7 +235,7 @@ var carta21 = {
 
 var carta22 = {
     nome: "Cyndaquil",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/155.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
     atributos: {
         ataque: 7,
         defesa: 5,
@@ -246,7 +246,7 @@ var carta22 = {
 
 var carta23 = {
     nome: "Typhlosion",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/157.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -257,7 +257,7 @@ var carta23 = {
 
 var carta24 = {
     nome: "Totodile",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/158.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
     atributos: {
         ataque: 5,
         defesa: 7,
@@ -268,7 +268,7 @@ var carta24 = {
 
 var carta25 = {
     nome: "Feraligatr",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/160.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -279,7 +279,7 @@ var carta25 = {
 
 var carta26 = {
     nome: "Raikou",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/243.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/243.png",
     atributos: {
         ataque: 8,
         defesa: 6,
@@ -290,7 +290,7 @@ var carta26 = {
 
 var carta27 = {
     nome: "Entei",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/244.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/244.png",
     atributos: {
         ataque: 9,
         defesa: 4,
@@ -301,7 +301,7 @@ var carta27 = {
 
 var carta28 = {
     nome: "Suicune",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/245.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/245.png",
     atributos: {
         ataque: 6,
         defesa: 8,
@@ -312,7 +312,7 @@ var carta28 = {
 
 var carta29 = {
     nome: "Tyranitar",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/248.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
     atributos: {
         ataque: 10,
         defesa: 8,
@@ -323,7 +323,7 @@ var carta29 = {
 
 var carta30 = {
     nome: "Lugia",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/249.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -334,7 +334,7 @@ var carta30 = {
 
 var carta31 = {
     nome: "Ho-Oh",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/250.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
     atributos: {
         ataque: 7,
         defesa: 8,
@@ -345,7 +345,7 @@ var carta31 = {
 
 var carta32 = {
     nome: "Celebi",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/251.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/251.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -356,7 +356,7 @@ var carta32 = {
 
 var carta33 = {
     nome: "Treecko",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/252.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png",
     atributos: {
         ataque: 6,
         defesa: 7,
@@ -367,7 +367,7 @@ var carta33 = {
 
 var carta34 = {
     nome: "Sceptile",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/254.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -378,7 +378,7 @@ var carta34 = {
 
 var carta35 = {
     nome: "Torchic",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/255.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
     atributos: {
         ataque: 7,
         defesa: 4,
@@ -389,7 +389,7 @@ var carta35 = {
 
 var carta36 = {
     nome: "Blaziken",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/257.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
     atributos: {
         ataque: 8,
         defesa: 7,
@@ -400,7 +400,7 @@ var carta36 = {
 
 var carta37 = {
     nome: "Mudkip",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/258.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png",
     atributos: {
         ataque: 6,
         defesa: 7,
@@ -411,7 +411,7 @@ var carta37 = {
 
 var carta38 = {
     nome: "Swampert",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/260.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
     atributos: {
         ataque: 9,
         defesa: 7,
@@ -422,7 +422,7 @@ var carta38 = {
 
 var carta39 = {
     nome: "Shiftry",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/275.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/275.png",
     atributos: {
         ataque: 7,
         defesa: 8,
@@ -433,7 +433,7 @@ var carta39 = {
 
 var carta40 = {
     nome: "Gardevoir",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/282.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
     atributos: {
         ataque: 5,
         defesa: 6,
@@ -444,7 +444,7 @@ var carta40 = {
 
 var carta41 = {
     nome: "Aggron",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/306.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
     atributos: {
         ataque: 9,
         defesa: 8,
@@ -455,7 +455,7 @@ var carta41 = {
 
 var carta42 = {
     nome: "Flygon",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/330.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
     atributos: {
         ataque: 7,
         defesa: 6,
@@ -466,7 +466,7 @@ var carta42 = {
 
 var carta43 = {
     nome: "Zangoose",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/335.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
     atributos: {
         ataque: 8,
         defesa: 7,
@@ -477,7 +477,7 @@ var carta43 = {
 
 var carta44 = {
     nome: "Salamence",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/373.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/373.png",
     atributos: {
         ataque: 10,
         defesa: 8,
@@ -488,7 +488,7 @@ var carta44 = {
 
 var carta45 = {
     nome: "Metagross",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/376.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376.png",
     atributos: {
         ataque: 9,
         defesa: 10,
@@ -499,7 +499,7 @@ var carta45 = {
 
 var carta46 = {
     nome: "Regirock",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/377.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/377.png",
     atributos: {
         ataque: 7,
         defesa: 10,
@@ -510,7 +510,7 @@ var carta46 = {
 
 var carta47 = {
     nome: "Regice",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/378.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/378.png",
     atributos: {
         ataque: 5,
         defesa: 10,
@@ -521,7 +521,7 @@ var carta47 = {
 
 var carta48 = {
     nome: "Registeel",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/379.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/379.png",
     atributos: {
         ataque: 7,
         defesa: 10,
@@ -532,7 +532,7 @@ var carta48 = {
 
 var carta49 = {
     nome: "Latias",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/380.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
     atributos: {
         ataque: 5,
         defesa: 6,
@@ -543,7 +543,7 @@ var carta49 = {
 
 var carta50 = {
     nome: "Latios",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/381.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
     atributos: {
         ataque: 7,
         defesa: 5,
@@ -554,7 +554,7 @@ var carta50 = {
 
 var carta51 = {
     nome: "Kyogre",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/382.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/382.png",
     atributos: {
         ataque: 9,
         defesa: 5,
@@ -565,7 +565,7 @@ var carta51 = {
 
 var carta52 = {
     nome: "Groudon",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/383.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
     atributos: {
         ataque: 9,
         defesa: 7,
@@ -576,7 +576,7 @@ var carta52 = {
 
 var carta53 = {
     nome: "Rayquaza",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/384.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png",
     atributos: {
         ataque: 9,
         defesa: 4,
@@ -587,7 +587,7 @@ var carta53 = {
 
 var carta54 = {
     nome: "Jirachi",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/385.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
     atributos: {
         ataque: 5,
         defesa: 4,
@@ -598,7 +598,7 @@ var carta54 = {
 
 var carta55 = {
     nome: "Deoxys",
-    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/386.png",
+    imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/386.png",
     atributos: {
         ataque: 10,
         defesa: 7,
@@ -683,19 +683,19 @@ botaoSortear.addEventListener("click", function () {
 
     botaoSortear.disabled = true;
     botaoJogar.disabled = false;
-
-    var nomePokemon = document.querySelector(".nome__pokemon");
-    nomePokemon.innerHTML = cartaJogador.nome;
-
-    var campoImagem = document.querySelector(".imagem__carta");
-    campoImagem.innerHTML =
-        '<img class = "imagem__cartas" src =' + cartaJogador.imagem + ">";
-
-    exibirOpcoes();
+    limparResultado();
+    exibirCartaJogador();
+    limparCartaComputador();
 });
 
-function exibirOpcoes() {
-    var opcoes = document.querySelector(".opcoes");
+function exibirCartaJogador() {
+    var divCartaJogador = document.getElementById("carta-jogador");
+    divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
+
+    var moldura =
+        '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
+    var tagHTML = "<div id = 'opcoes' class = 'carta-status'>";
+
     var opcoesTexto = "";
 
     for (var atributo in cartaJogador.atributos) {
@@ -704,10 +704,12 @@ function exibirOpcoes() {
             atributo +
             ">" +
             atributo +
-            "</input>";
+            ": " +
+            cartaJogador.atributos[atributo] +
+            "</input><br>";
     }
-    opcoes.classList.add("display");
-    opcoes.innerHTML = opcoesTexto;
+    var nome = "<p class = 'carta-subtitle'>" + cartaJogador.nome + "</p>";
+    divCartaJogador.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
 }
 
 function obtemAtributoSelecionado() {
@@ -720,6 +722,11 @@ function obtemAtributoSelecionado() {
     }
 }
 
+function limparResultado() {
+    var resultado = document.querySelector(".resultado");
+    resultado.innerHTML = "";
+}
+
 botaoJogar.addEventListener("click", function () {
     var atributoSelecionado = obtemAtributoSelecionado();
     var resultado = document.querySelector(".resultado");
@@ -730,13 +737,55 @@ botaoJogar.addEventListener("click", function () {
         resultado.innerHTML = "Parabéns, você venceu!";
     } else if (atributoComputador > atributoJogador) {
         resultado.innerHTML =
-            "Infelizmente você perdeu, o atributo do computador era " +
+            "Infelizmente você perdeu, o atributo " +
+            atributoSelecionado +
+            " do computador era " +
             atributoComputador;
     } else {
         resultado.innerHTML =
-            "Deu empate! O atributo do computador também era " + atributoComputador;
+            "Deu empate! O atributo " +
+            atributoSelecionado +
+            " do computador também era " +
+            atributoComputador;
     }
+    botaoSortear.disabled = false;
+    botaoJogar.disabled = true;
+    exibirCartaComputador();
 });
+
+function exibirCartaComputador() {
+    var divCartaComputador = document.getElementById("carta-maquina");
+    divCartaComputador.style.backgroundImage = `url(${cartaComputador.imagem})`;
+
+    var moldura =
+        '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
+    var tagHTML = "<div id = 'opcoes' class = 'carta-status'>";
+
+    var opcoesTexto = "";
+
+    for (var atributo in cartaJogador.atributos) {
+        opcoesTexto +=
+            "<p>" +
+            atributo +
+            ": " +
+            cartaComputador.atributos[atributo] +
+            "<br></p>";
+    }
+    var nome = "<p class = 'carta-subtitle'>" + cartaComputador.nome + "</p>";
+    divCartaComputador.innerHTML =
+        moldura + nome + tagHTML + opcoesTexto + "</div>";
+}
+
+function limparCartaComputador() {
+    var divCartaComputador = document.getElementById("carta-maquina");
+    divCartaComputador.style.backgroundImage = "";
+
+    var moldura =
+        '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
+    var tagHTML = "";
+    var nome = "";
+    divCartaComputador.innerHTML = "";
+}
 
 // botaoReiniciar.addEventListener("click", function () {
 //   location.reload();
