@@ -1,0 +1,116 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  min-height: 845px;
+  background-image: url("https://i.ibb.co/WGBhzCk/6.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+}
+
+header .container {
+  text-align: center;
+  padding: 20px;
+}
+
+.container img {
+  width: 400px;
+}
+
+.page__title {
+  color: #ff3333;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+main .container {
+  text-align: center;
+}
+
+.botao__sortear,
+.botao__jogar,
+.botao__resetar {
+  padding: 0.8rem 1.5rem;
+  background: #ff3333;
+  border-radius: 10px;
+  color: #fff;
+  border-color: #fff;
+  font-size: 1rem;
+}
+
+.botao__sortear:disabled,
+.botao__jogar:disabled {
+  background: #fff;
+  color: #ff3333;
+  border-color: #ff3333;
+  cursor: not-allowed;
+}
+
+.botao__sortear:hover,
+.botao__jogar:hover,
+.botao__resetar:hover {
+  background: #fff;
+  color: #ff3333;
+  border-color: #ff3333;
+  transition: 0.5s ease;
+}
+
+main .container .botao__resetar {
+  margin-top: 50px;
+}
+
+.page__subtitle {
+  text-align: center;
+  color: #fff;
+}
+
+.imagem__carta {
+  display: flex;
+  justify-content: center;
+}
+
+.imagem__cartas {
+  width: 20%;
+}
+
+.nome__pokemon {
+  text-align: center;
+  font-size: 23px;
+  color: #000;
+  font-weight: bold;
+}
+
+.opcoes {
+  color: white;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.display {
+  border-radius: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.opcoes input {
+  margin: 20px 10px;
+}
+
+.resultado {
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+}
