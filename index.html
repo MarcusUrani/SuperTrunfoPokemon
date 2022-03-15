@@ -14,60 +14,56 @@
 
 <body>
     <header>
-        <div class="container">
+        <section class="header__container">
             <a href="https://imersao.dev/">
                 <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-                    class="page-logo" alt="Logo imersão dev">
+                    class="header__imersao--logo" alt="Logo imersão dev">
             </a>
-        </div>
+        </section>
     </header>
     <main>
-        <h1 class="page__title">
+        <h1 class="main__title">
             Super Trunfo Pokémons
         </h1>
-        <div class="container">
-            <button class="botao__sortear">
+        <div class="main__container">
+            <button class="sort__button">
                 Sortear carta
             </button>
         </div>
-        <h2 class="page__subtitle">
+        <h2 class="main__subtitle">
             Escolha seu atributo
         </h2>
-        <div class="wrapper">
-            <div>
-                <div id="carta-jogador">
+        <div class="card__wrapper">
+            <div class="disabled" id="player__card__container">
+                <div id="player__card">
                     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                        style=" width: inherit; height: inherit; position: absolute;">
-                    <h3></h3>
+                        style=" width: inherit; height: inherit; position: absolute;"/>
                 </div>
             </div>
-            <div>
-                <div id="carta-maquina" class="carta"><img
+            <div class="disabled" id="machine__card__container">
+                <div id="machine__card">
+                    <img
                         src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                        style=" width: inherit; height: inherit; position: absolute;"></div>
+                        style=" width: inherit; height: inherit; position: absolute;" />
+                </div>
             </div>
         </div>
-        <form id="form">
-            <div class="container">
-                <button type="button" class="botao__jogar" disabled="true">Jogar</button>
+        <form id="main__form">
+            <div class="form__container">
+                <button type="button" class="play__button" disabled="true">Jogar</button>
             </div>
-            <div class="resultado"></div>
-            <!--       <div class="container">
-            <button class="botao__resetar">
-              Reiniciar Jogo
-            </button>
-          </div> -->
+            <div class="result"></div>
         </form>
     </main>
-    <footer class="rodape">
+    <footer>
         <a href="https://github.com/MarcusUrani" target="_blank">
-            <img src="https://i.imgur.com/SSvQAZy.png" alt="GitHub">
+            <img src="https://i.imgur.com/SSvQAZy.png" alt="GitHub" class="footer__link">
         </a>
-        <a href="https://www.linkedin.com/in/marcus-urani-553a4b21b/" target="_blank">
-            <img src="https://i.imgur.com/fgV9mOt.png" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/marcusurani" target="_blank">
+            <img src="https://i.imgur.com/fgV9mOt.png" alt="LinkedIn" class="footer__link">
         </a>
         <a href="mailto:marcus.urani20@gmail.com">
-            <img src="https://i.imgur.com/rUO94ml.png" alt="E-mail">
+            <img src="https://i.imgur.com/rUO94ml.png" alt="E-mail" class="footer__link">
         </a>
     </footer>
     <script src = "app.js"></script>
