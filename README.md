@@ -22,5 +22,5 @@ Obrigado por jogar :)
 ## Autor
 
 - Marcus Urani
-- [LinkedIn](https://linkedin.com/in/marcusurani);
+- [LinkedIn](https://linkedin.com/in/marcusurani)
 - [Portfólio](https://marcusurani.netlify.app)
