@@ -1,10 +1,15 @@
 const sortButton = document.querySelector(".sort__button");
 const playButton = document.querySelector(".play__button");
+const resultSection = document.querySelector(".main__result");
 const result = document.querySelector(".result");
 const machineDiv = document.querySelector("#machine__card__container");
 const playerDiv = document.querySelector("#player__card__container");
+const playerScoreSection = document.querySelector(".main__score--player");
+const machineScoreSection = document.querySelector(".main__score--machine");
+let playerScore = 0;
+let machineScore = 0;
 
-var card1 = {
+const card1 = {
   name: "Charmander",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
   attributes: {
@@ -15,7 +20,7 @@ var card1 = {
   },
 };
 
-var card2 = {
+const card2 = {
   name: "Bulbassauro",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
   attributes: {
@@ -26,7 +31,7 @@ var card2 = {
   },
 };
 
-var card3 = {
+const card3 = {
   name: "Squirtle",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
   attributes: {
@@ -37,7 +42,7 @@ var card3 = {
   },
 };
 
-var card4 = {
+const card4 = {
   name: "Charizard",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
   attributes: {
@@ -48,7 +53,7 @@ var card4 = {
   },
 };
 
-var card5 = {
+const card5 = {
   name: "Venussaur",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
   attributes: {
@@ -59,7 +64,7 @@ var card5 = {
   },
 };
 
-var card6 = {
+const card6 = {
   name: "Blastoise",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
   attributes: {
@@ -70,7 +75,7 @@ var card6 = {
   },
 };
 
-var card7 = {
+const card7 = {
   name: "Pikachu",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
   attributes: {
@@ -81,7 +86,7 @@ var card7 = {
   },
 };
 
-var card8 = {
+const card8 = {
   name: "Ninetales",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
   attributes: {
@@ -92,7 +97,7 @@ var card8 = {
   },
 };
 
-var card9 = {
+const card9 = {
   name: "Arcanine",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
   attributes: {
@@ -103,7 +108,7 @@ var card9 = {
   },
 };
 
-var card10 = {
+const card10 = {
   name: "Cloyster",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png",
   attributes: {
@@ -114,7 +119,7 @@ var card10 = {
   },
 };
 
-var card11 = {
+const card11 = {
   name: "Gengar",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
   attributes: {
@@ -125,7 +130,7 @@ var card11 = {
   },
 };
 
-var card12 = {
+const card12 = {
   name: "Gyarados",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
   attributes: {
@@ -136,7 +141,7 @@ var card12 = {
   },
 };
 
-var card13 = {
+const card13 = {
   name: "Eevee",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
   attributes: {
@@ -147,7 +152,7 @@ var card13 = {
   },
 };
 
-var card14 = {
+const card14 = {
   name: "Articuno",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
   attributes: {
@@ -158,7 +163,7 @@ var card14 = {
   },
 };
 
-var card15 = {
+const card15 = {
   name: "Moltres",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
   attributes: {
@@ -169,7 +174,7 @@ var card15 = {
   },
 };
 
-var card16 = {
+const card16 = {
   name: "Zapdos",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
   attributes: {
@@ -180,7 +185,7 @@ var card16 = {
   },
 };
 
-var card17 = {
+const card17 = {
   name: "Dragonite",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
   attributes: {
@@ -191,7 +196,7 @@ var card17 = {
   },
 };
 
-var card18 = {
+const card18 = {
   name: "Mewtwo",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
   attributes: {
@@ -202,7 +207,7 @@ var card18 = {
   },
 };
 
-var card19 = {
+const card19 = {
   name: "Mew",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
   attributes: {
@@ -213,7 +218,7 @@ var card19 = {
   },
 };
 
-var card20 = {
+const card20 = {
   name: "Chikorita",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
   attributes: {
@@ -224,7 +229,7 @@ var card20 = {
   },
 };
 
-var card21 = {
+const card21 = {
   name: "Meganium",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png",
   attributes: {
@@ -235,7 +240,7 @@ var card21 = {
   },
 };
 
-var card22 = {
+const card22 = {
   name: "Cyndaquil",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
   attributes: {
@@ -246,7 +251,7 @@ var card22 = {
   },
 };
 
-var card23 = {
+const card23 = {
   name: "Typhlosion",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png",
   attributes: {
@@ -257,7 +262,7 @@ var card23 = {
   },
 };
 
-var card24 = {
+const card24 = {
   name: "Totodile",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
   attributes: {
@@ -268,7 +273,7 @@ var card24 = {
   },
 };
 
-var card25 = {
+const card25 = {
   name: "Feraligatr",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
   attributes: {
@@ -279,7 +284,7 @@ var card25 = {
   },
 };
 
-var card26 = {
+const card26 = {
   name: "Raikou",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/243.png",
   attributes: {
@@ -290,7 +295,7 @@ var card26 = {
   },
 };
 
-var card27 = {
+const card27 = {
   name: "Entei",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/244.png",
   attributes: {
@@ -301,7 +306,7 @@ var card27 = {
   },
 };
 
-var card28 = {
+const card28 = {
   name: "Suicune",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/245.png",
   attributes: {
@@ -312,7 +317,7 @@ var card28 = {
   },
 };
 
-var card29 = {
+const card29 = {
   name: "Tyranitar",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
   attributes: {
@@ -323,7 +328,7 @@ var card29 = {
   },
 };
 
-var card30 = {
+const card30 = {
   name: "Lugia",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
   attributes: {
@@ -334,7 +339,7 @@ var card30 = {
   },
 };
 
-var card31 = {
+const card31 = {
   name: "Ho-Oh",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
   attributes: {
@@ -345,7 +350,7 @@ var card31 = {
   },
 };
 
-var card32 = {
+const card32 = {
   name: "Celebi",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/251.png",
   attributes: {
@@ -356,7 +361,7 @@ var card32 = {
   },
 };
 
-var card33 = {
+const card33 = {
   name: "Treecko",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png",
   attributes: {
@@ -367,7 +372,7 @@ var card33 = {
   },
 };
 
-var card34 = {
+const card34 = {
   name: "Sceptile",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png",
   attributes: {
@@ -378,7 +383,7 @@ var card34 = {
   },
 };
 
-var card35 = {
+const card35 = {
   name: "Torchic",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
   attributes: {
@@ -389,7 +394,7 @@ var card35 = {
   },
 };
 
-var card36 = {
+const card36 = {
   name: "Blaziken",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
   attributes: {
@@ -400,7 +405,7 @@ var card36 = {
   },
 };
 
-var card37 = {
+const card37 = {
   name: "Mudkip",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png",
   attributes: {
@@ -411,7 +416,7 @@ var card37 = {
   },
 };
 
-var card38 = {
+const card38 = {
   name: "Swampert",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
   attributes: {
@@ -422,7 +427,7 @@ var card38 = {
   },
 };
 
-var card39 = {
+const card39 = {
   name: "Shiftry",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/275.png",
   attributes: {
@@ -433,7 +438,7 @@ var card39 = {
   },
 };
 
-var card40 = {
+const card40 = {
   name: "Gardevoir",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
   attributes: {
@@ -444,7 +449,7 @@ var card40 = {
   },
 };
 
-var card41 = {
+const card41 = {
   name: "Aggron",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
   attributes: {
@@ -455,7 +460,7 @@ var card41 = {
   },
 };
 
-var card42 = {
+const card42 = {
   name: "Flygon",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
   attributes: {
@@ -466,7 +471,7 @@ var card42 = {
   },
 };
 
-var card43 = {
+const card43 = {
   name: "Zangoose",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
   attributes: {
@@ -477,7 +482,7 @@ var card43 = {
   },
 };
 
-var card44 = {
+const card44 = {
   name: "Salamence",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/373.png",
   attributes: {
@@ -488,7 +493,7 @@ var card44 = {
   },
 };
 
-var card45 = {
+const card45 = {
   name: "Metagross",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376.png",
   attributes: {
@@ -499,7 +504,7 @@ var card45 = {
   },
 };
 
-var card46 = {
+const card46 = {
   name: "Regirock",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/377.png",
   attributes: {
@@ -510,7 +515,7 @@ var card46 = {
   },
 };
 
-var card47 = {
+const card47 = {
   name: "Regice",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/378.png",
   attributes: {
@@ -521,7 +526,7 @@ var card47 = {
   },
 };
 
-var card48 = {
+const card48 = {
   name: "Registeel",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/379.png",
   attributes: {
@@ -532,7 +537,7 @@ var card48 = {
   },
 };
 
-var card49 = {
+const card49 = {
   name: "Latias",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
   attributes: {
@@ -543,7 +548,7 @@ var card49 = {
   },
 };
 
-var card50 = {
+const card50 = {
   name: "Latios",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
   attributes: {
@@ -554,7 +559,7 @@ var card50 = {
   },
 };
 
-var card51 = {
+const card51 = {
   name: "Kyogre",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/382.png",
   attributes: {
@@ -565,7 +570,7 @@ var card51 = {
   },
 };
 
-var card52 = {
+const card52 = {
   name: "Groudon",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
   attributes: {
@@ -576,7 +581,7 @@ var card52 = {
   },
 };
 
-var card53 = {
+const card53 = {
   name: "Rayquaza",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png",
   attributes: {
@@ -587,7 +592,7 @@ var card53 = {
   },
 };
 
-var card54 = {
+const card54 = {
   name: "Jirachi",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
   attributes: {
@@ -598,7 +603,7 @@ var card54 = {
   },
 };
 
-var card55 = {
+const card55 = {
   name: "Deoxys",
   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/386.png",
   attributes: {
@@ -609,7 +614,7 @@ var card55 = {
   },
 };
 
-var cards = [
+const cards = [
   card1,
   card2,
   card3,
@@ -667,106 +672,111 @@ var cards = [
   card55,
 ];
 
-var computerCard;
-var playerCard;
+let computerCard;
+let playerCard;
 
 sortButton.addEventListener("click", function () {
-  var playerCardNumber = parseInt(Math.random() * cards.length);
+  let playerCardNumber = parseInt(Math.random() * cards.length);
   playerCard = cards[playerCardNumber];
   cards.splice[playerCardNumber];
 
-  var computerCardNumber = parseInt(Math.random() * cards.length);
-  computerCard = cards[computerCardNumber];
-
-  while (playerCardNumber == computerCardNumber) {
-    var computerCardNumber = parseInt(Math.random() * cards.length);
-  }
+  let computerCardNumber = parseInt(Math.random() * cards.length);
   computerCard = cards[computerCardNumber];
 
   sortButton.disabled = true;
   playButton.disabled = false;
-  cleanResult();
+  result.innerHTML = "";
   showPlayerCard();
   clearComputerCard();
 });
 
-function showPlayerCard() {
+const showPlayerCard = () => {
   playerDiv.classList.remove("disabled");
-  var playerCardDiv = document.getElementById("player__card");
+  let playerCardDiv = document.getElementById("player__card");
   playerCardDiv.style.backgroundImage = `url(${playerCard.image})`;
 
-  var imageSection =
+  const imageSection =
     '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
-  var tagHTML = "<div id = 'options' class = 'card__status'>";
+  const tagHTML = "<div id = 'options' class = 'card__status'>";
 
-  var textOptions = "";
+  let textOptions = "";
 
-  for (var attribute in playerCard.attributes) {
+  for (let attribute in playerCard.attributes) {
     textOptions += `<input type = "radio" name = "attribute" value = "${attribute}">${attribute}: ${playerCard.attributes[attribute]}</input><br>`;
   }
-  var name = `<p class = "card__subtitle">${playerCard.name}</p>`;
+  const name = `<p class = "card__subtitle">${playerCard.name}</p>`;
   playerCardDiv.innerHTML =
     imageSection + name + tagHTML + textOptions + "</div>";
-}
+};
 
-function getSelectedAttribute() {
-  var radioAttributes = document.getElementsByName("attribute");
+const getSelectedAttribute = () => {
+  const radioAttributes = document.getElementsByName("attribute");
 
-  for (var i = 0; i < radioAttributes.length; i++) {
+  for (let i = 0; i < radioAttributes.length; i++) {
     if (radioAttributes[i].checked) {
       return radioAttributes[i].value;
     }
   }
-}
-
-function cleanResult() {
-  result.innerHTML = "";
-}
+};
 
 playButton.addEventListener("click", function () {
-  var selectedAttribute = getSelectedAttribute();
-  var playerAttribute = playerCard.attributes[selectedAttribute];
-  var computerAttribute = computerCard.attributes[selectedAttribute];
+  const selectedAttribute = getSelectedAttribute();
+  if (selectedAttribute != undefined) {
+    const playerAttribute = playerCard.attributes[selectedAttribute];
+    const computerAttribute = computerCard.attributes[selectedAttribute];
 
-  if (playerAttribute > computerAttribute) {
-    result.innerHTML = "Parabéns, você venceu!";
-  } else if (computerAttribute > playerAttribute) {
-    result.innerHTML = `Infelizmente você perdeu, o atributo ${selectedAttribute} do adversário era ${computerAttribute}`;
+    if (playerAttribute > computerAttribute) {
+      playerScore++;
+      window.scrollTo(0, 0);
+      resultSection.classList.remove("disabled");
+      playerScoreSection.innerHTML = playerScore;
+      result.innerHTML = `Parabéns, você venceu! O placar agora é de: ${playerScore} x ${machineScore}`;
+    } else if (computerAttribute > playerAttribute) {
+      machineScore++;
+      window.scrollTo(0, 0);
+      resultSection.classList.remove("disabled");
+      machineScoreSection.innerHTML = machineScore;
+      result.innerHTML = `Infelizmente você perdeu, o atributo ${selectedAttribute} do adversário era ${computerAttribute}. O placar agora é de: ${playerScore} x ${machineScore}`;
+    } else {
+      window.scrollTo(0, 0);
+      resultSection.classList.remove("disabled");
+      result.innerHTML = `Deu empate! O atributo ${selectedAttribute} do adversário era ${computerAttribute}. O placar continua em: ${playerScore} x ${machineScore}`;
+    }
+    sortButton.disabled = false;
+    playButton.disabled = true;
+    showComputerCard();
   } else {
-    result.innerHTML = `Deu empate! O atributo ${selectedAttribute} do adversário era ${computerAttribute}`;
+    resultSection.classList.remove("disabled");
+    result.innerHTML = "Selecione um atributo para jogar!";
   }
-  sortButton.disabled = false;
-  playButton.disabled = true;
-  showComputerCard();
 });
 
-function showComputerCard() {
+const showComputerCard = () => {
   machineDiv.classList.remove("disabled");
-  var computerCardDiv = document.getElementById("machine__card");
+  let computerCardDiv = document.getElementById("machine__card");
   computerCardDiv.style.backgroundImage = `url(${computerCard.image})`;
 
-  var imageSection =
+  const imageSection =
     '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
-  var tagHTML = "<div id = 'options' class = 'card__status machine__status'>";
+  const tagHTML = "<div id = 'options' class = 'card__status machine__status'>";
 
-  var textOptions = "";
+  let textOptions = "";
 
-  for (var attribute in computerCard.attributes) {
+  for (let attribute in computerCard.attributes) {
     textOptions += `<p class="machine__attribute">${attribute}: ${computerCard.attributes[attribute]}</p></br>`;
   }
-  var name = `<p class = "card__subtitle">${computerCard.name} </p>`;
+  const name = `<p class = "card__subtitle">${computerCard.name} </p>`;
   computerCardDiv.innerHTML =
     imageSection + name + tagHTML + textOptions + "</div>";
-}
+};
 
-function clearComputerCard() {
+const clearComputerCard = () => {
   machineDiv.classList.add("disabled");
-  var computerCardDiv = document.getElementById("machine__card");
+  const computerCardDiv = document.getElementById("machine__card");
   computerCardDiv.style.backgroundImage = "";
-
-  var imageSection =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
-  var tagHTML = "";
-  var name = "";
   computerCardDiv.innerHTML = "";
-}
+};
+
+const closeModal = () => {
+  resultSection.classList.add("disabled");
+};
