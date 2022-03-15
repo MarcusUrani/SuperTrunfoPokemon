@@ -731,17 +731,9 @@ playButton.addEventListener("click", function () {
   if (playerAttribute > computerAttribute) {
     result.innerHTML = "Parabéns, você venceu!";
   } else if (computerAttribute > playerAttribute) {
-    result.innerHTML =
-      "Infelizmente você perdeu, o atributo " +
-      selectedAttribute +
-      " do computador era " +
-      computerAttribute;
+    result.innerHTML = `Infelizmente você perdeu, o atributo ${selectedAttribute} do adversário era ${computerAttribute}`;
   } else {
-    result.innerHTML =
-      "Deu empate! O atributo " +
-      selectedAttribute +
-      " do computador também era " +
-      computerAttribute;
+    result.innerHTML = `Deu empate! O atributo ${selectedAttribute} do adversário era ${computerAttribute}`;
   }
   sortButton.disabled = false;
   playButton.disabled = true;
@@ -762,7 +754,7 @@ function showComputerCard() {
   for (var attribute in computerCard.attributes) {
     textOptions += `<p class="machine__attribute">${attribute}: ${computerCard.attributes[attribute]}</p></br>`;
   }
-  var name = "<p class = 'card__subtitle'>" + computerCard.name + "</p>";
+  var name = `<p class = "card__subtitle">${computerCard.name} </p>`;
   computerCardDiv.innerHTML =
     imageSection + name + tagHTML + textOptions + "</div>";
 }

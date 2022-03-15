@@ -4,6 +4,7 @@
 
 ## Tecnologias Utilizadas
 
+- Visual Studio Code: Editor de código;
 - HTML: Construção da página e carregamento dos estilos em CSS e script em JavaScript;
 - CSS: Estilização da página;
 - JavaSscript: Utilizado para a implementação da lógica por trás do funcionamento do jogo. Implementando funções aos botões, inserindo as cartas na tela e realizando os cálculos;
