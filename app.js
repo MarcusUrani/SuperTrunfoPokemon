@@ -686,28 +686,9 @@ sortButton.addEventListener("click", function () {
   sortButton.disabled = true;
   playButton.disabled = false;
   result.innerHTML = "";
-  showPlayerCard();
+  createCardHtml(playerCard, "player", "input", playerDiv);
   clearComputerCard();
 });
-
-const showPlayerCard = () => {
-  playerDiv.classList.remove("disabled");
-  let playerCardDiv = document.getElementById("player__card");
-  playerCardDiv.style.backgroundImage = `url(${playerCard.image})`;
-
-  const imageSection =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
-  const tagHTML = "<div id = 'options' class = 'card__status'>";
-
-  let textOptions = "";
-
-  for (let attribute in playerCard.attributes) {
-    textOptions += `<input type = "radio" name = "attribute" value = "${attribute}">${attribute}: ${playerCard.attributes[attribute]}</input><br>`;
-  }
-  const name = `<p class = "card__subtitle">${playerCard.name}</p>`;
-  playerCardDiv.innerHTML =
-    imageSection + name + tagHTML + textOptions + "</div>";
-};
 
 const getSelectedAttribute = () => {
   const radioAttributes = document.getElementsByName("attribute");
@@ -744,30 +725,36 @@ playButton.addEventListener("click", function () {
     }
     sortButton.disabled = false;
     playButton.disabled = true;
-    showComputerCard();
+    createCardHtml(
+      computerCard,
+      "machine",
+      "p",
+      machineDiv,
+      "machine__attribute"
+    );
   } else {
     resultSection.classList.remove("disabled");
     result.innerHTML = "Selecione um atributo para jogar!";
   }
 });
 
-const showComputerCard = () => {
-  machineDiv.classList.remove("disabled");
-  let computerCardDiv = document.getElementById("machine__card");
-  computerCardDiv.style.backgroundImage = `url(${computerCard.image})`;
+const createCardHtml = (card, player, tag, playerCardDiv, className) => {
+  playerCardDiv.classList.remove("disabled");
+  let cardDiv = document.getElementById(`${player}__card`);
+  cardDiv.style.backgroundImage = `url(${card.image})`;
 
   const imageSection =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
-  const tagHTML = "<div id = 'options' class = 'card__status machine__status'>";
+    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">';
+  const optionsSection = `<section id = "options" class = "card__status ${player}__status">`;
 
   let textOptions = "";
 
-  for (let attribute in computerCard.attributes) {
-    textOptions += `<p class="machine__attribute">${attribute}: ${computerCard.attributes[attribute]}</p></br>`;
+  for (let attribute in card.attributes) {
+    textOptions += `<${tag} class = "${className}" type = "radio" name = "attribute" value = "${attribute}">${attribute}: ${card.attributes[attribute]}</${tag}><br>`;
   }
-  const name = `<p class = "card__subtitle">${computerCard.name} </p>`;
-  computerCardDiv.innerHTML =
-    imageSection + name + tagHTML + textOptions + "</div>";
+  const name = `<p class = "card__subtitle">${card.name} </p>`;
+  cardDiv.innerHTML =
+    imageSection + name + optionsSection + textOptions + "</section>";
 };
 
 const clearComputerCard = () => {
