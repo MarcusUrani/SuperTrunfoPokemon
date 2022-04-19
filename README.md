@@ -2,12 +2,9 @@
 
 - Projeto desenvolvido na imersão dev da Alura
 
-<div class="image-logo"><img alt="Poké trunfo logo" src="https://i.imgur.com/YMFMGWO.png"/></div>
-<style>
-.image-logo {
-  text-align: center;
-}
-</style>
+<div align="center">
+    <img style="width: 300px;" alt="Poké trunfo logo" src="https://i.imgur.com/YMFMGWO.png"/>
+</div>
 
 ## 💻 Tecnologias utilizadas
 
