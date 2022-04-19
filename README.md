@@ -2,6 +2,8 @@
 
 - Projeto desenvolvido na imersão dev da Alura
 
+<img  align="center" alt="Poké trunfo logo" src="https://imgur.com/YMFMGWO"/>
+
 ## 💻 Tecnologias utilizadas
 
 - Visual Studio Code
